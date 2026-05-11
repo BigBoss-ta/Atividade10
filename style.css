@@ -18,6 +18,13 @@ body {
     
 }
 
+.formContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(5, auto);
+}
+
 #form {
     background-color: brown;
         display: grid;
