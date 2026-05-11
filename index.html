@@ -17,70 +17,75 @@
     </header>
 
     <main>
-        <div id="form" method="POST">
-            <div class="camps">
-                <div class="name">
+        <form id="form" method="POST" action="submit.php">
+                <div class="name camps">
                     <label for="name">Nome:</label>
                     <input id="name" name="name" type="text" placeholder="John Pettinton" minlength="6" required>
                 </div>
-                <div class="email">
+                <div class="email camps">
                     <label for="email">Email:</label>
                     <input id="email" name="email" type="email" placeholder="John123@gmail.com"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
-                <div class="phone">
+                <div class="phone camps">
                     <label for="phone">Telefone:</label>
                     <input id="phone" name="phone" type="tel" placeholder="(47) 99999-9999"
                         pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
                 </div>
-                <div class="cpf">
+                <div class="cpf camps">
                     <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="CPF)"
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="CPF"
                         placeholder="000.000.000-00" maxlength="14" inputmode="numeric" required>
                 </div>
-                <div class="bDay">
-                    <label for="bDay">Data de Nascimento</label>
+                <div class="bDay camps">
+                    <label for="bDay">Data de Nascimento:</label>
                     <input id="bDay" name="bDay" type="date" placeholder="01-01-2000" required>
                 </div>
-                <div class="city">
-                    <label for="city">Cidade</label>
+                <div class="city camps">
+                    <label for="city">Cidade:</label>
                     <input id="city" name="city" type="text" maxlength="168" placeholder="Joinville" required>
                 </div>
-                <div class="housetype">
+                <div class="housetype camps">
                     <label for="housetype">Tipo de Moradia:</label>
                     <label for="casa">Casa</label>
-                    <input type="radio" name="housetype" value="house">
+                    <input type="radio" id="casa" name="housetype" value="house">
                     <label for="apartamento">Apartamento</label>
-                    <input type="radio" name="housetype" value="AP">
+                    <input type="radio" id="apartamento" name="housetype" value="AP">
                 </div>
-                <div class="backyard"></div>
-                <div class="petBefore">
+                <div class="backyard camps">
+                    <label for="backyard">Possui quintal:</label>
+                    <input type="checkbox" id="backyard" name="backyard">
+                </div>
+                <div class="petBefore camps">
                     <label for="petBefore">Já teve pet:</label>
                     <label for="yesPB">Sim</label>
-                    <input type="radio" name="petBefore" value="yesPB">
+                    <input type="radio" id="yesPB" name="petBefore" value="yesPB">
                     <label for="noPB">Não</label>
-                    <input type="radio" name="petBefore" value="noPB">
+                    <input type="radio" id="noPB" name="petBefore" value="noPB">
                 </div>
-                <div class="hoursAlone">
+                <div class="hoursAlone camps">
                     <label for="hoursAlone">Quantas horas o Pet ficara sozinho:</label>
                     <input type="number" id="hoursAlone" name="hoursAlone" min="0" max="24" value="0">
                 </div>
-                <div class="motive">
+                <div class="motive camps">
                     <label for="motive">Motivo da adoação:</label>
                     <textarea name="motive" id="motive" placeholder="Texto"></textarea>
                 </div>
-                <div class="terms">
+                <div class="terms camps">
                     <label for="terms">Aceitar Termos e Condições</label>
                     <input type="checkbox" id="terms" name="terms">
                 </div>
-            </div>
-        </div>
-        <input type="submit">
+            <input type="submit">
+        </form>
         <script src="script.js"></script>
     </main>
 
     <footer>
-        <p>Copyright © 2026 Joinville Adoptions. All rights reserved.<br>No part of this publication, website, or content may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the copyright owner.</p>
+        <p>Copyright © 2026 Joinville Adoptions. All rights reserved.
+            <br>No part of this publication, website, or content may be reproduced, distributed,
+            or transmitted in any form or by any means without prior written
+            permission from the copyright owner.
+        </p>
     </footer>
 
 </body>
